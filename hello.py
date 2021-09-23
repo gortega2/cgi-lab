@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os, json
+import os
 import templates
 print("Content-type:text/html\r\n\r\n")
 
@@ -9,7 +9,6 @@ print("<p>Hello World cmput404 class!</p>")
 
 
 print(os.environ)
-json_object = json.dumps(dict(os.environ), indent=4)
 
 for param in os.environ.keys():
     if (param=="QUERY_STRING"):
